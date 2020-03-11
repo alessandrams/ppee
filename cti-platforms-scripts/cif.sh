@@ -13,8 +13,11 @@ cif -p
 cif --itype ipv4 --tags scanner -d
 
 # Start and stop
+sudo systemctl stop cif-httpd
 sudo systemctl stop csirtg-smrt
-sudo systemctl stop csirtg-router
 sudo systemctl stop cif-router
+sudo systemctl stop nginx
+
+
 
 
